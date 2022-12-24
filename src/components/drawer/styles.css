@@ -1,0 +1,35 @@
+.drawer-wrapper {
+  align-self: flex-end;
+}
+
+.drawer-openIcon {
+  fill: var(--text-color);
+  cursor: pointer;
+}
+
+.drawer-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 100vh;
+  padding: 0.5rem;
+  
+  box-shadow: 0.5px 0 5px rgba(255, 255, 255, 0.2);
+  background-color: var(--app-bgcolor);
+}
+
+.drawer-closeIcon {
+  fill: var(--text-color);
+  cursor: pointer;
+  text-align: right;
+}
+
+.drawer-list {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

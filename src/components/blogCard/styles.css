@@ -1,0 +1,41 @@
+.blogCard {
+  width: 100%;
+  color: var(--text-color);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blogCard .blog-title {
+  font-size: 3rem;
+}
+
+.blogCard .blog-date {
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.blog-shortContent {
+  text-align: justify;
+
+  width: 100%;
+  line-height: 1.5;
+}
+
+.ellipsis {
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+}
+
+.blogCard .blog-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.blog-actions-text {
+  font-size: 0.8rem;
+}

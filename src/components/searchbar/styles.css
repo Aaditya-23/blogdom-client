@@ -1,0 +1,26 @@
+.searchbar-wrapper {
+  margin: 1rem 0;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  border: 1.6px solid var(--text-color);
+  border-radius: 2rem;
+  cursor: text;
+}
+
+.input-area {
+  font-family: inherit;
+  color: var(--text-color);
+  background-color: transparent;
+  border: none;
+  height: 2rem;
+  width: 100%;
+}
+
+.input-area:focus {
+  outline: none;
+}
+
+.input-area::placeholder {
+  color: white;
+}
