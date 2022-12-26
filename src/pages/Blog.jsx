@@ -16,6 +16,7 @@ export default function Blog() {
   const copyToClipboard = () => {
     const url = window.location.href;
     navigator.clipboard.writeText(url);
+    alert("Link copied to clipboard.");
   };
 
   useEffect(() => {
