@@ -23,10 +23,9 @@ export const axiosGet = async (args) => {
 export const axiosPost = async (args) => {
   try {
     const { url, data, token, signal } = args;
-    const headers = token ? { authorization: `Bearer ${token}` } : undefined;
+    const headers = token ? { Authorization: `Bearer ${token}` } : undefined;
 
-    const res = await axios.post(url, {
-      data,
+    const res = await axios.post(url, data, {
       headers,
       signal,
     });

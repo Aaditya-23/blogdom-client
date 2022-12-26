@@ -1,0 +1,118 @@
+.comments-wrapper {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+
+.commentEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.new-comment-author,
+.new-comment-body {
+  padding: 0.5rem;
+  width: 100%;
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  border: none;
+  border-radius: 0.5rem;
+
+  color: var(--text-color);
+  background-color: black;
+}
+
+.new-comment-author:focus,
+.new-comment-body:focus {
+  outline: none;
+}
+
+.new-comment-body {
+  min-height: 0.8in;
+  resize: vertical;
+}
+
+.new-comment-body::-webkit-scrollbar {
+  display: none;
+}
+
+.comment-submitButton {
+  align-self: flex-end;
+
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  background-color: black;
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.comment {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-radius: 0.5rem;
+  background-color: hsl(0, 0%, 10%);
+}
+
+.comment-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comment-info {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.comment-author {
+  font-size: 1.2rem;
+}
+
+.comment-date {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+.comment-deleteIcon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.comment-body {
+  width: 100%;
+  padding: 0 0.5rem;
+  max-height: 1.5in;
+  text-align: justify;
+  overflow-y: auto;
+}
+
+.comment-body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.comment-body::-webkit-scrollbar-track {
+  background-color: #1c2833;
+  border-radius: 2rem;
+}
+
+.comment-body::-webkit-scrollbar-thumb {
+  background-color: #2c3e50;
+  border-radius: 2rem;
+}

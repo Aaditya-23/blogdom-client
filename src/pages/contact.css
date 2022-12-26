@@ -1,0 +1,83 @@
+.contactpage {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card {
+  width: 55vw;
+  max-height: 90vh;
+
+  aspect-ratio: 1.5/1;
+
+  display: flex;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.firstHalf,
+.secondHalf {
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.firstHalf {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--text-color);
+  background-color: black;
+}
+
+.secondHalf {
+  gap: 1rem;
+}
+
+.email,
+.message {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: black;
+  color: var(--text-color);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.email:focus,
+.message:focus {
+  outline: none;
+}
+
+.message {
+  resize: none;
+  min-height: 1.5in;
+}
+
+.message::-webkit-scrollbar {
+  display: none;
+}
+
+.contact-submitButton {
+  align-self: flex-start;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  background-color: black;
+  cursor: pointer;
+}

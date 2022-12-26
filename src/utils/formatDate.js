@@ -15,16 +15,16 @@ export default function formatDate(oldDateStr) {
   ];
   const prevDate = new Date(oldDateStr);
   const today = new Date();
-
   const { abs, floor } = Math;
 
   const deltaYears = today.getFullYear() - prevDate.getFullYear();
   const deltaMonths =
-    abs(today.getMonth() - prevDate.getMonth() + 1) + deltaYears * 12;
+    abs(today.getMonth() - prevDate.getMonth()) + deltaYears * 12;
   const deltaDays =
     abs(today.getDate() - prevDate.getDate()) + deltaMonths * 30;
 
-  if (deltaDays <= 6) return `${deltaDays} days ago`;
+  if (deltaDays === 0) return "Today";
+  else if (deltaDays > 0 && deltaDays <= 6) return `${deltaDays} days ago`;
   else if (deltaDays > 6 && deltaDays <= 13) return `1 week ago`;
   else if (deltaDays > 13 && deltaDays <= 30)
     return `${floor(deltaDays / 7)} weeks ago`;

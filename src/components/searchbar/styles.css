@@ -1,20 +1,22 @@
 .searchbar-wrapper {
   margin: 1rem 0;
-  padding: 0.3rem;
+  padding: 0.8rem;
+  width: 250px;
   display: flex;
   align-items: center;
+  color: var(--text-color);
   border: 1.6px solid var(--text-color);
   border-radius: 2rem;
   cursor: text;
 }
 
 .input-area {
+  width: 100%;
   font-family: inherit;
-  color: var(--text-color);
+  font-size: 0.9rem;
+  color: inherit;
   background-color: transparent;
   border: none;
-  height: 2rem;
-  width: 100%;
 }
 
 .input-area:focus {

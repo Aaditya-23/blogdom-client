@@ -16,46 +16,11 @@
   font-weight: 400;
 }
 
-.join-container {
+.logout-button {
   margin-left: auto;
-  position: relative;
-}
-
-.join-blogdom {
-  font-family: inherit;
   font-size: 1rem;
-  color: inherit;
+  text-transform: uppercase;
   text-decoration: underline;
-}
-
-.joinModal {
-  padding: 1rem;
-  width: 25vw;
-
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  letter-spacing: 3px;
   color: var(--text-color);
-
-  border-radius: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
-
-  position: absolute;
-  bottom: -0.5rem;
-  right: 0.1rem;
-
-  translate: 0 100%;
-}
-
-.authProviders {
-  margin: auto;
-
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-}
-
-.provider {
-  width: 1.5rem;
-  height: 1.5rem;
 }

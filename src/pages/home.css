@@ -1,9 +1,14 @@
-main {
-  margin: 5rem auto 0 auto;
-  width: 50%;
-
+.home-main {
+  margin: 5rem auto 1rem auto;
+  width: 90vw;
+  /* background-color: red; */
   display: flex;
   flex-direction: column;
   gap: 4rem;
-  /* background-color: red; */
+}
+
+.no-results {
+  font-size: 2rem;
+  color: var(--text-color);
+  text-transform: capitalize;
 }

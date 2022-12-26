@@ -4,10 +4,12 @@ import App from "./App";
 import "./assets/global.css";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
-import blogReducer from "./redux/BlogSlice.js";
+import blogReducer from "./redux/blogSlice.js";
+import adminReducer from "./redux/adminSlice.js";
 
 const store = configureStore({
   reducer: {
+    admin: adminReducer,
     blogs: blogReducer,
   },
 });
