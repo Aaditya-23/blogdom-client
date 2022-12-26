@@ -1,5 +1,5 @@
 .searchbar-wrapper {
-  margin: 1rem 0;
+  align-self: center;
   padding: 0.8rem;
   width: 250px;
   display: flex;
