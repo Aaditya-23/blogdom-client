@@ -5,16 +5,16 @@
 .drawer-openIcon {
   fill: var(--text-color);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .drawer-modal {
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   left: 0;
 
   padding: 0.5rem;
-  height: 100vh;
-
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -27,6 +27,7 @@
   fill: var(--text-color);
   cursor: pointer;
   text-align: right;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .drawer-list {
@@ -47,4 +48,5 @@
   translate: -50% 0;
   height: 28px;
   fill: var(--text-color);
+  -webkit-tap-highlight-color: transparent;
 }

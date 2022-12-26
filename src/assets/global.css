@@ -23,6 +23,8 @@ button {
   font-family: inherit;
   background-color: transparent;
   border: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {
@@ -78,8 +80,8 @@ ul {
   .message {
     min-height: 1in;
   }
-  
-  .login-card{
+
+  .login-card {
     width: 90vw;
   }
 }
@@ -105,7 +107,7 @@ ul {
     width: 90vw;
   }
 
-  .login-card{
+  .login-card {
     width: 70vw;
   }
 }
@@ -119,8 +121,7 @@ ul {
     width: 90vw;
   }
 
-  .login-card{
+  .login-card {
     width: 50vw;
   }
-  
 }
