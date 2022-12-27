@@ -19,7 +19,7 @@ export default function Navbar() {
       <h2 className="nav-title">
         <Link to="/">Blogdom</Link>
       </h2>
-      {isVerified && (
+      {isVerified === true && (
         <button className="logout-button" onClick={handleLogout}>
           Logout
         </button>
