@@ -130,7 +130,6 @@ export const contact = async (data) => {
     const res = await axiosPost(args);
     return res.data;
   } catch (error) {
-    console.log(error);
     throw error.response;
   }
 };

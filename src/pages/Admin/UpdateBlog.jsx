@@ -53,10 +53,9 @@ export default function UpdateBlog() {
         const { blog } = res;
         dispatch(reduxUpdateBlog({ _id: id, blog }));
 
-        e.target.title.value = null;
-        setValue("");
+        navigate("/");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => alert("An Error occured while updating the blog."));
   };
 
   useEffect(() => {
